@@ -16,67 +16,18 @@ const Home = () => {
 
         <a href=""> Sign Up for Cosmic Ledger Today!</a> */}
     <title>Cosmic Ledger</title>
-    <style>
-        body{
-          {{background-image: "url('https://i.pinimg.com/736x/73/97/55/739755622c248729cfe14c8bc828ef41.jpg')"}};
-          {{background-repeat: "no-repeat"}};
-          {{background-size: "100% auto"}};
-        }
-        .form-control::placeholder {
-            {{color: "white"}};
-        }
-        .headding{
-          {{background: "linear-gradient(to right, #f32170, 
-                    #ff6b08, #cf23cf, #eedd44)"}}; 
-            -webkit-text-fill-color: {{"transparent"}}; 
-            -webkit-background-clip: {{"text"}}; 
-          {{text-align: "center"}};
-          {{font-size: "100px"}};
-          {{font-family: "'Ubuntu', sans-serif"}};
-          
-        }
-        
-        .footer_container{
-          {{background-color: "rgb(245, 175, 43)"}};
-         
-        }
-        .content_middle>h2{
-          {{text-align: "center"}};
-          {{font-family: "'Edu TAS Beginner', cursive"}};
-          {{font-size:" 50px"}};
-        }
-        .content_middle{
-          {{color:" wheat"}};
-          {{font-size: "30px"}};
-          {{font-family: "'Edu TAS Beginner', cursive"}};
-          {{text-align: "justify" }};
-          
-        }
-        .container_WhyUs{
-          {{color: "wheat"}};
-          {{font-size: "20px"}};
-        }
-        .container_WhyUs h3{
-          {{color: "seagreen"}}
-        }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link>
+
 <body>
   
     <header class="p-3 text-bg-transparent text-white">
-        <div class="container" style="
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-">
+        <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-centre mb-2 mb-lg-0 text-white text-decoration-none">
               
@@ -263,56 +214,56 @@ const Home = () => {
     
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#bootstrap"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#cpu-fill"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#calendar3"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#home"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#speedometer2"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#toggles2"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#geo-fill"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
             </div>
           </div>
           <div class="col d-flex align-items-start">
-            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlinkHref="#tools"></use></svg>
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
               <p>Paragraph of text beneath the heading to explain the heading.</p>
@@ -346,10 +297,10 @@ const Home = () => {
     </div>
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Cosmic_Ledger"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Cosmic_Ledger"><svg class="bi" width="24" height="24"><use xlinkHref="#twitter"></use></svg></a></li>
     
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlinkHref="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlinkHref="#facebook"></use></svg></a></li>
     </ul>
   </footer>
 </div>
@@ -360,9 +311,7 @@ const Home = () => {
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet"></link>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>   
     </div>
-  }
-  }
   )
+      }
 export default Home
