@@ -12,13 +12,6 @@
   padding-top: 10px;
 }
 
-.section-80 {
-  width: 80%;
-  background: linear-gradient(#141F40, #000000);
-  display: inline-block;
-  height: 100vh;
-}
-
 .navigation-bar{
   display: flex;
   flex-direction: column;
@@ -27,6 +20,22 @@
 
 .navigation-bar button{
   width: 75%;
+  background: transparent;
+  border: 0;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.section-80 {
+  width: 80%;
+  background: linear-gradient(#141F40, #000000);
+  display: inline-block;
+  height: 100vh;
+}
+
+.dashboard-header, .dashboard-body {
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /*------x--------x-------*/
@@ -48,7 +57,8 @@
   .headding{
     background: linear-gradient(to right, #f32170, 
               #ff6b08, #cf23cf, #eedd44); 
-      -webkit-text-fill-color: transparent; 
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; 
     text-align: center;
     font-size: 100px;
     font-family: 'Ubuntu', sans-serif;
