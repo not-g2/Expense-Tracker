@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
     text-align: center;
+    
   }
 
   .App {
@@ -52,8 +53,11 @@
   .Body {
     height: 90vh;
   }
-
-
+  .About_Uscont{
+    height: 100vh;
+    display: block;
+    background-image: url(../About_Us\ background\ image.jpeg);
+  }
 
 
 
