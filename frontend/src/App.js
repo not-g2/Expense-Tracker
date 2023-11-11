@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="section-20">
-        {/*Home Friends Groups Inbox Transaction-History Vault*/ }
+        {/*Home Friends Groups Inbox Transaction-History Vault*/}
         <div className="navigation-bar">
           <NavBar />
         </div>
