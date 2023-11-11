@@ -3,10 +3,7 @@ import '../App.css'
 const QuickSummary = () => {
   return (
     <div>
-      <p>Hi harsh</p>
-      
-      
-      
+      <p>Hi harsh</p>  
     </div>
     
   )
