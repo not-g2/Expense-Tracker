@@ -5,7 +5,7 @@ import QuickSummary from './QuickSummary'
 const DashboardHomePage = () => {
   return (
     <div>
-        <div>
+        <div className='header'>
           <Welcome/>
         </div>
         <div>

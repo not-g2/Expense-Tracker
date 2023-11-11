@@ -4,7 +4,7 @@ import NavBar from '../Components/NavBar'
 
 const Dashboard = () => {
   return (
-    <div className>
+    <div>
         <div className='section-20'>
             <NavBar />
         </div>
