@@ -59,7 +59,48 @@
     background-image: url(../About_Us\ background\ image.jpeg);
   }
 
-
+  body{
+    background-image: url('https://i.pinimg.com/736x/73/97/55/739755622c248729cfe14c8bc828ef41.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .form-control::placeholder {
+      color: white;
+  }
+  .headding{
+    background: linear-gradient(to right, #f32170, 
+              #ff6b08, #cf23cf, #eedd44); 
+      -webkit-text-fill-color: transparent; 
+      -webkit-background-clip: text; 
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+  
+  .footer_container{
+    background-color: rgb(245, 175, 43);
+   
+  }
+  .content_middle>h2{
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 50px;
+  }
+  .content_middle{
+    color: wheat;
+    font-size: 30px;
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: justify ;
+    
+  }
+  .container_WhyUs{
+    color: wheat;
+    font-size: 20px;
+  }
+  .container_WhyUs h3{
+    color: seagreen
+  }
 
 
 
