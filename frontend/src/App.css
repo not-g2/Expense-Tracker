@@ -1,66 +1,98 @@
-*{
-    margin: 0;
-    /* padding: 0px; */
-    box-sizing: border-box;
-    font-family: 'Lexend', sans-serif;
+* {
+  margin: 0;
+}
+/*Related to DashBoard*/
+
+.section-20 {
+  width: 20%;
+  background: linear-gradient(#084a55, #141F40);
+  display: inline-block;
+  vertical-align: top;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.navigation-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation-bar button{
+  width: 75%;
+  background: transparent;
+  border: 0;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+
+.section-80 {
+  width: 80%;
+  background: linear-gradient(#141F40, #000000);
+  display: inline-block;
+  height: 100vh;
+}
+
+.dashboard-header, .dashboard-body {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*------x--------x-------*/
+
+.About_Uscont{
+  height: 100vh;
+  display: block;
+  background-image: url(../About_Us\ background\ image.jpeg);
+}
+
+  body{
+    background-image: url('https://i.pinimg.com/736x/73/97/55/739755622c248729cfe14c8bc828ef41.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+  .form-control::placeholder {
+      color: white;
+  }
+  .headding{
+    background: linear-gradient(to right, #f32170, 
+              #ff6b08, #cf23cf, #eedd44); 
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; 
     text-align: center;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
     
   }
-
-  .App {
-    display: flex;
-  }
   
-  .section-20 {
-    width: 20%;
-    background: linear-gradient(#084a55, #141F40);
-    height: 100vh;
-    padding-top: 20px;
+  .footer_container{
+    background-color: rgb(245, 175, 43);
+   
+  }
+  .content_middle>h2{
+    text-align: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 50px;
+  }
+  .content_middle{
+    color: wheat;
+    font-size: 30px;
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: justify ;
+    
+  }
+  .container_WhyUs{
+    color: wheat;
+    font-size: 20px;
+  }
+  .container_WhyUs h3{
+    color: seagreen
   }
 
-  .navigation-bar {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  .container{
+      margin-left: "0px";
+      margin-right: "0px";
+      padding-left:" 0px";
+      padding-right: "0px";
   }
 
-  .navigation-bar button {
-    display: block; /* Display the buttons as block-level elements */
-    width: 90%;
-    border: 0;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border-style: groove;
-    background-color: transparent;
-    padding-bottom: 5px;
-    color: rgba(235, 235, 235, 1);
-  }
-  
-  .section-80 {
-    width: 80%;
-    background: linear-gradient(#141F40, #000000);
-  }
-
-  .Body, .Header {
-    color: #FFFFFF;
-  }
-
-  .Header {
-    height: 10vh;
-    padding-top: 10px;
-  }
-
-  .Body {
-    height: 90vh;
-  }
-  .About_Uscont{
-    height: 100vh;
-    display: block;
-    background-image: url(../About_Us\ background\ image.jpeg);
-  }
-
-
-
-
-
-  
