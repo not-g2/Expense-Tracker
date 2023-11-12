@@ -1,7 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
+import PopUp from './popup'
 
-const MainHeader = () => {
-  return (
+
+const LoginButton = () => {
+  const [login, setLogin] = useState(false);
+
+  const handleLoginClick = () => {
+    setLogin((prevLogin) => !prevLogin);
+  };
+return (
+  
+
     <div className="p-3 text-bg-transparent text-white">
     <div className="container" >
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -20,13 +29,16 @@ const MainHeader = () => {
 
 
         <div className="text-end col-4">
-          <button type="button" className="btn btn-outline-light me-2">Login</button>
+          <button type="button" className="btn btn-outline-light me-2" onClick={handleLoginClick}>Login</button>
           <button type="button" className="btn btn-outline-light me-2">Sign-up</button>
         </div>
       </div>
+    <div className='Popupp'>{login && <PopUp /> }</div>
     </div>
     </div>
+
   )
 }
 
-export default MainHeader
+
+export  default LoginButton;
