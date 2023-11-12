@@ -1,5 +1,6 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
+import PopUp from '../Components/popup'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         </ul>
 
         <a href=""> Sign Up for Cosmic Ledger Today!</a> */}
+    
     <MainHeader />
     <title>Cosmic Ledger</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -32,6 +34,7 @@ const Home = () => {
       <div class="content_middle">
         <h2>Welcome to Cosmic Ledger, your one-stop shop for financial management.</h2>
         <p>At Cosmic Ledger, we believe that everyone deserves to have access to the tools and resources they need to achieve their financial goals. That's why we've created a comprehensive financial management website that is easy to use, secure, and personalized.</p>
+        
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
