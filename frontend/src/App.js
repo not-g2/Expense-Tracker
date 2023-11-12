@@ -10,6 +10,7 @@ import {
   Routes
 } from 'react-router-dom'
 import React from 'react'
+import MainHeader from './Components/MainHeader';
 
 function App() {
   return (

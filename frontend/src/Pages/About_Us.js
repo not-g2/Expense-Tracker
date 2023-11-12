@@ -1,7 +1,10 @@
 import React from 'react'
+import MainHeader from '../Components/MainHeader'
 
 const About_Us = () => {
   return (
+    <div>
+      <MainHeader />
     <div container="About_Uscont">
        <div container="Heading_About_Us">
         <h1>About Us</h1>
@@ -29,6 +32,7 @@ Introducing Cosmic Ledger: Your Personal Financial Guardian</h2>
             <a href="">Visit Cosmic Ledger today and embark on your journey of financial enlightenment.</a>
 
         </div>
+    </div>
     </div>
   )
 }
