@@ -12,6 +12,9 @@ class User(models.Model):
     savings = models.FloatField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    account_no = models.IntegerField(default=generate_unique_account_number, unique=True)
-    username = models.TextField()
-    password = models.TextField()
+    account_no = models.FloatField(default=generate_unique_account_number)
+    username = models.TextField(max_length=100, blank=False, null=False, default='abcde')
+    password = models.CharField(max_length=100, blank=False, null=False, default='abcde')
+
+    def __str__(self):
+        return f'{self.name}({self.account_no})'
