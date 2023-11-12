@@ -33,7 +33,7 @@ return (
           <button type="button" className="btn btn-outline-light me-2">Sign-up</button>
         </div>
       </div>
-    <div className='Popupp'>{login && <PopUp /> }</div>
+    <div className='Popupp'>{login && <PopUp hclose={handleLoginClick}/> }</div>
     </div>
     </div>
 

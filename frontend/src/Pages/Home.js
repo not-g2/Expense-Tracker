@@ -1,7 +1,7 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
 import PopUp from '../Components/popup'
-
+console.log(PopUp)
 const Home = () => {
   return (
     <div>

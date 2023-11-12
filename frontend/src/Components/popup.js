@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { Navigate } from 'react-router-dom'
 
 
-const PopUp=()=>{
+const PopUp=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loggedIn, setLoggedIn] = useState(false);
@@ -35,6 +35,7 @@ const PopUp=()=>{
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
                     </label>
                     <button type="submit">Login</button>
+                    <button type="button" onClick={props.hclose}>Exit</button>
                 </form>
             </div>
         </div>

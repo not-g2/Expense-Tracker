@@ -107,7 +107,7 @@
     }
     
     .popup-inner {
-    background-color: white;
+    background-color: rgb(23, 8, 59);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -120,13 +120,13 @@
     
     .popup-inner h2 {
     margin-top: 0;
-    color:#141F40;
+    color:#9efcd5;
     }
     
     .popup-inner label {
     display: block;
     margin-bottom: 10px;
-    color: #141F40;
+    color: #9efcd5;
     }
     
     .popup-inner input {
