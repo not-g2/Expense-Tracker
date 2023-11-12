@@ -8,6 +8,8 @@ def checkUserExists(providedUsername, providedPassword):
     else:
         return False
 
+
+#https:127.0.0.1/8000/?param1={User given username}&param2={User given password}
 @api_view(['GET'])
 def getDetails(request):
     param1 = request.GET.get('param1')
