@@ -11,10 +11,10 @@ const MainHeader = () => {
 
 
         <ul className="nav col-4 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="./home.html" className="nav-link px-2 text-white ">Home</a></li>
-          <li><a href="#" className="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="./home" className="nav-link px-2 text-white ">Home</a></li>
+          <li><a href="./pricing" className="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" className="nav-link px-2 text-white">About_Us</a></li>
+          <li><a href="./about" className="nav-link px-2 text-white">About_Us</a></li>
         </ul>
 
 
