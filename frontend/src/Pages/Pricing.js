@@ -69,7 +69,7 @@ const Pricing = () => {
             <th style= {{width: "22%"}}>Pro</th>
             <th style= {{width: "22%"}}>Enterprise</th>
           </tr>
-        </thead>
+        </thead>00
         <tbody>
           <tr>
             <th scope="row" class="text-start">Public</th>
