@@ -3,10 +3,10 @@ import MainHeader from '../Components/MainHeader'
 
 const About_Us = () => {
   return (
-    <div>
+    <div className='aboutUsPage'>
       <MainHeader />
-    <div container="About_Uscont">
-       <div container="Heading_About_Us">
+    <div container="About_Uscont" className='About_Uscont'>
+       <div container="Heading_About_Us" className='Heading_About_Us'>
         <h1>About Us</h1>
 
         </div> 

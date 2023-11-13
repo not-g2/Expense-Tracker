@@ -40,17 +40,32 @@
 
 /*------x--------x-------*/
 
+/*-----About Us Page------*/
 .About_Uscont{
-  height: 100vh;
+  height: 150vh;
   display: block;
+  color: #EEEEEE;
+  /*background-image: url(../About_Us\ background\ image.jpeg);*/
+  background: transparent;
+}
+
+.aboutUsPage {
   background-image: url(../About_Us\ background\ image.jpeg);
 }
 
+/*------x--------x-------*/
+
+.HomePage {
+  background-image: url(../../replicate-prediction-o4kudnzbgwjgiggi3pj42vw6ci.png);
+  background-size: cover;
+}
+
   body{
-    background-image: url('https://i.pinimg.com/736x/73/97/55/739755622c248729cfe14c8bc828ef41.jpg');
+    /*background-image: url('https://i.pinimg.com/736x/73/97/55/739755622c248729cfe14c8bc828ef41.jpg');*/
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
+
   .form-control::placeholder {
       color: white;
   }
@@ -66,7 +81,7 @@
   }
   
   .footer_container{
-    background-color: rgb(245, 175, 43);
+    background-color: rgb(17, 24, 70);
    
   }
   .content_middle>h2{
