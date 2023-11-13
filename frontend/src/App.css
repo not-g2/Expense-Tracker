@@ -4,6 +4,33 @@
 /*Related to DashBoard*/
 
 .section-20 {
+  /* width: 20%;
+  background: linear-gradient(#084a55, #141F40);
+  display: inline-block;
+  vertical-align: top;
+  height: 100vh;
+  padding-top: 10px; */
+  /* display: inline-block;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%); */
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 25px;
+    color: white;
+    width: 70%;
+}
+
+.navigation-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 20%;
   background: linear-gradient(#084a55, #141F40);
   display: inline-block;
@@ -12,14 +39,8 @@
   padding-top: 10px;
 }
 
-.navigation-bar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .navigation-bar button{
-  width: 75%;
+  width: 100%;
   background: transparent;
   border: 0;
   color: #FFFFFF;
@@ -27,7 +48,7 @@
 }
 
 .section-80 {
-  width: 80%;
+  width: 100%;
   background: linear-gradient(#141F40, #000000);
   display: inline-block;
   height: 100vh;
@@ -200,3 +221,11 @@
     .popu{
       align-content: center;
     }
+.buttonn{
+  position: absolute !important;
+  left: 20% !important;
+}
+.piechart{
+  width: 200px;
+  align-content: center;
+}

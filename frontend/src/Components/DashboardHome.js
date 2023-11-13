@@ -4,7 +4,7 @@ import QuickSummary from './QuickSummary'
 import Pie from './graph'
 import UserData from './Dashboardpiedata'
 
-const DashboardHomePage = () => {
+const DashboardHomePage = (props) => {
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.year),
     datasets: [
@@ -26,11 +26,11 @@ const DashboardHomePage = () => {
   return (
     <div>
         <div className='dashboard-header'>
-          <Welcome/>
+          <Welcome nclose={props.nclose1}/>
         </div>
         <div className='dashboard-body'>
           <QuickSummary/>
-          <div style={{ width: 500 }}>
+          <div className="piechart" style={{ width: 500 }}>
         <Pie chartData={userData} />
         </div>
         </div>

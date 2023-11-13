@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import DashboardHomePage from '../Components/DashboardHome'
 import NavBar from '../Components/NavBar'
 
 const Dashboard = () => {
+  const [togg,setTogg]=useState(false);
+  const toggnav = () => {
+    setTogg((prevTogg) => !prevTogg);
+  };
   return (
     <div>
         <div className='section-20'>
-            <NavBar />
+        {togg && <NavBar />}
         </div>
         <div className='section-80'>
-            <DashboardHomePage/>
+            <DashboardHomePage nclose1={toggnav}/>
         </div>
     </div>
   )
