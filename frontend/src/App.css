@@ -56,6 +56,26 @@
 
 /*------x--------x-------*/
 
+.Faq {
+  background-image: url(../../replicate-prediction-bwkmjlrbx6kr3bc4nh5kx5ercu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.Faq-text {
+  font-size: large;
+  color: rgb(30, 245, 213);
+  background: transparent;
+  height: 100vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .HomePage {
   background-image: url(../../replicate-prediction-o4kudnzbgwjgiggi3pj42vw6ci.png);
   background-size: cover;

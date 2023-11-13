@@ -1,6 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import User, ExpenditureTransaction
+from rest_framework import status
 
 def checkUserExists(providedUsername, providedPassword):
     if User.objects.filter(username = providedUsername).exists() and User.objects.filter(password = providedPassword).exists():
@@ -29,7 +30,21 @@ def getDetails(request):
     #Password
     param2 = request.GET.get('param2')
 
-    return Response(checkUserExists(param1, param2))
+    if checkUserExists(param1, param2):
+        user = User.objects.get(username = param1, password = param2)
+        user_dict = {
+            'id': user.id,
+            'name': user.name,
+            'savings': user.savings,
+            'created': user.created,
+            'updated': user.updated,
+            'username': user.username,
+            'password': user.password,
+            'account no': user.account_no
+        }
+        return Response(user_dict)
+    else:
+        return Response({'detail': 'User not found.'}, status=status.HTTP_404_NOT_FOUND)
 
 #https:127.0.0.1/8000/expenditure/?param1={User Account no}
 @api_view(['GET'])
@@ -40,3 +55,4 @@ def getExpenditureTransaction(request):
         account_no_id = User.objects.get(account_no = param1).id
         History = retrieveHistory(account_no_id)
         return Response(History)
+    
