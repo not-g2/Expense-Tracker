@@ -2,7 +2,8 @@ import './App.css';
 import Home from './Pages/Home';
 import AboutUs from './Pages/About_Us';
 import Pricing from './Pages/Pricing';
-import Dashboard from './Pages/Dashboard'
+import Dashboard from './Pages/Dashboard';
+import FAQ from './Pages/FAQ'
 
 import {
   BrowserRouter as Router,
@@ -21,6 +22,7 @@ function App() {
         <Route path='/home' element = {<Home/>}/>
         <Route path='/about' element = {<AboutUs/>}/>
         <Route path='/pricing' element = {<Pricing/>}/>
+        <Route path='/faq' element = {<FAQ/>}/>
       </Routes>
     </div>
     </Router>
