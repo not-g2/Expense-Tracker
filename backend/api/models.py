@@ -3,7 +3,7 @@ import random
 
 def generate_unique_account_number():
     while True:
-        account_number = random.randint(100_000_000_000_000, 999_999_999_999_999)  # Replace with your desired range
+        account_number = random.randint(100_000_000_000_000, 999_999_999_999_999)
         if not User.objects.filter(account_no=account_number).exists():
             return account_number
 
@@ -18,3 +18,12 @@ class User(models.Model):
 
     def __str__(self):
         return f'{self.name}({self.account_no})'
+    
+class ExpenditureTransaction(models.Model):
+    account_no = models.ForeignKey(User, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
+    amount = models.FloatField()
+    category = models.TextField()
+
+    def __str__(self):
+        return f'{self.account_no}'
