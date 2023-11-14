@@ -1,9 +1,10 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
-
+import PopUp from '../Components/popup'
+console.log(PopUp)
 const Home = () => {
   return (
-    <div>
+    <div className='HomePage'>
         {/* <h2>Unleash the Power of Financial Harmony</h2>
         <h3>Cosmic Ledger: Your Personal Financial Guardian</h3>
         <p>Embark on a transformative journey towards financial well-being with Cosmic Ledger, your personal financial guardian. Inspired by the Egyptian god Thoth, the deity of knowledge, wisdom, and writing, Cosmic Ledger meticulous tracks your financial transactions, illuminating your path to financial clarity and empowerment.</p>
@@ -16,6 +17,7 @@ const Home = () => {
         </ul>
 
         <a href=""> Sign Up for Cosmic Ledger Today!</a> */}
+    
     <MainHeader />
     <title>Cosmic Ledger</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -26,12 +28,13 @@ const Home = () => {
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap" rel="stylesheet"></link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></link>
 
-<body>
+    <div>
       <h1 class="headding">Cosmic Ledger</h1>
 
       <div class="content_middle">
         <h2>Welcome to Cosmic Ledger, your one-stop shop for financial management.</h2>
         <p>At Cosmic Ledger, we believe that everyone deserves to have access to the tools and resources they need to achieve their financial goals. That's why we've created a comprehensive financial management website that is easy to use, secure, and personalized.</p>
+        
       </div>
 
       <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -223,7 +226,7 @@ const Home = () => {
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet"></link>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+</div>
     </div>
   )
       }
