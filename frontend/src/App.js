@@ -4,6 +4,7 @@ import AboutUs from './Pages/About_Us';
 import Pricing from './Pages/Pricing';
 import Dashboard from './Pages/Dashboard';
 import FAQ from './Pages/FAQ'
+import TransactionHistory from './Pages/TransactionHistory';
 
 import {
   BrowserRouter as Router,
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/login/:loginid' element = {<Dashboard />}/>
+        <Route path='/login/:loginid/transactions' element = {<TransactionHistory />}/>
         <Route path='/home' element = {<Home/>}/>
         <Route path='/about' element = {<AboutUs/>}/>
         <Route path='/pricing' element = {<Pricing/>}/>
