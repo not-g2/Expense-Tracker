@@ -6,16 +6,30 @@ const PopUp=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loggedIn, setLoggedIn] = useState(false);
+    let userId = 0;
 
     function handleLogin(e) {
         e.preventDefault()
-        if (username==="abcd" && password=="abcd"){
-            setLoggedIn(true);
-        }
-        else{
-            setUsername("")
-            setPassword("")
-        }
+        const apiUrl = `http://127.0.0.1:8000/login/?param1=${username}&param2=${password}`
+        fetch(apiUrl, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => {
+            if (!response.ok) {
+                setUsername("")
+                setPassword("")
+            }
+            else {
+                setLoggedIn(true)
+                return response.json()
+            }
+        })
+        .then(data => {
+            console.log(data.id)
+        })
     }
     if (loggedIn) {
         return <Navigate to="/login/:loginid" />;
