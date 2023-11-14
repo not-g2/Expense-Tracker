@@ -41,7 +41,7 @@ def getDetails(request):
             'updated': user.updated,
             'username': user.username,
             'password': user.password,
-            'account no': user.account_no
+            'account_no': user.account_no
         }
         return Response(user_dict)
     else:

@@ -1,12 +1,19 @@
-import React,{useState} from 'react'
-import { Navigate } from 'react-router-dom'
+import React,{useEffect, useState} from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const PopUp=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loggedIn, setLoggedIn] = useState(false);
-    let userId = 0;
+    const [userAccountNo, setUserAccountNo] = useState(null);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (loggedIn && userAccountNo !== null) {
+            navigate(`/login/${userAccountNo}`);
+        }
+      }, [loggedIn, userAccountNo, navigate]);
 
     function handleLogin(e) {
         e.preventDefault()
@@ -17,23 +24,17 @@ const PopUp=props=>{
                 'Content-Type': 'application/json',
             },
         })
-        .then(response => {
+        .then(async response => {
             if (!response.ok) {
-                setUsername("")
-                setPassword("")
+                setUsername("");
+                setPassword("");
+            } else {
+                const jsonData = await response.json();
+                setUserAccountNo(jsonData.account_no);
+                setLoggedIn(true);
             }
-            else {
-                setLoggedIn(true)
-                return response.json()
-            }
-        })
-        .then(data => {
-            console.log(data.id)
         })
     }
-    if (loggedIn) {
-        return <Navigate to="/login/:loginid" />;
-      }
 
     return (
         <div className="popup">
