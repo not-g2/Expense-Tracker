@@ -1,7 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 
-
 const PopUp=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
