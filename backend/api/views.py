@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import User, ExpenditureTransaction
 from rest_framework import status
-from serilaizers import UserSerializer
+from .serilaizers import UserSerializer
 
 def checkUserExists(providedUsername, providedPassword):
     if User.objects.filter(username = providedUsername).exists() and User.objects.filter(password = providedPassword).exists():
@@ -62,6 +62,7 @@ def getExpenditureTransaction(request):
 def registerUser(request):
     serializer = UserSerializer(data=request.data)
     if serializer.is_valid():
+        serializer.save()
         return Response(serializer.data)
     else:
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
