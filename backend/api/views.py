@@ -2,6 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import User, ExpenditureTransaction
 from rest_framework import status
+from serilaizers import UserSerializer
 
 def checkUserExists(providedUsername, providedPassword):
     if User.objects.filter(username = providedUsername).exists() and User.objects.filter(password = providedPassword).exists():
@@ -56,3 +57,11 @@ def getExpenditureTransaction(request):
         History = retrieveHistory(account_no_id)
         return Response(History)
     
+#https:127.0.0.1/8000/register
+@api_view(['POST'])
+def registerUser(request):
+    serializer = UserSerializer(data=request.data)
+    if serializer.is_valid():
+        return Response(serializer.data)
+    else:
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
