@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const PopUp=props=>{
     const [username, setUsername] = useState('')
