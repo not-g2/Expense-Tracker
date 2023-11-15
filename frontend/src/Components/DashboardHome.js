@@ -34,6 +34,9 @@ const DashboardHomePage = (props) => {
         <Pie chartData={userData} />
         </div>
         </div>
+
+
+        
     </div>
   )
   }
