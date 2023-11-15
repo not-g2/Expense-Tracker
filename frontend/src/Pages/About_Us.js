@@ -7,13 +7,13 @@ const About_Us = () => {
     <motion.div className='aboutUsPage' animate={{width:"100%"}} initial={{width:0}} exit={{x:window.innerWidth,transition:{duration:1}}}>
       <MainHeader />
     <div container="About_Uscont" className='About_Uscont'>
-       <div container="Heading_About_Us" className='Heading_About_Us'>
-        <h1>About Us</h1>
+       <div container="Heading_About_Us " className='Heading_About_Us'>
+        <h1 >About Us</h1>
 
         </div> 
         <div container="Content_About_Us">
-            <h2>
-Introducing Cosmic Ledger: Your Personal Financial Guardian</h2>
+            <h2>                                                                              
+              Introducing Cosmic Ledger: Your Personal Financial Guardian</h2>
             <p>In the realm of personal finance, Cosmic Ledger emerges as your trusted companion, meticulously tracking your financial transactions and guiding you through the complexities of your financial cosmos. Inspired by the Egyptian god Thoth, the deity of knowledge, wisdom, and writing, Cosmic Ledger embodies the essence of financial clarity and organization. </p>
             <p>Just as Thoth inscribed every action and decision upon the celestial tablets, Cosmic Ledger meticulously chronicles your financial journey, ensuring that every penny is accounted for and every decision is made with informed precision. Whether you're navigating the intricacies of personal finances or managing the complexities of business ventures, Cosmic Ledger stands as your financial guardian, ensuring that your financial path is illuminated with the brilliance of financial literacy and empowered decision-making.</p>
 
@@ -28,11 +28,11 @@ Introducing Cosmic Ledger: Your Personal Financial Guardian</h2>
 
 
             <h2>Embrace Financial Harmony with Cosmic Ledger</h2>
-            <p>In the ever-evolving realm of finance, Cosmic Ledger stands as your unwavering companion, harmonizing your financial transactions and guiding you towards a brighter financial future. Just as Thoth orchestrated the celestial movements, Cosmic Ledger orchestrates your financial journey, ensuring that every decision is made with clarity, wisdom, and empowerment.</p>    
-
-            <a href="">Visit Cosmic Ledger today and embark on your journey of financial enlightenment.</a>
+            <p>In the ever-evolving realm of finance, Cosmic Ledger stands as your unwavering companion, harmonizing your financial transactions and guiding you towards a brighter financial future. Just as Thoth orchestrated the celestial movements, Cosmic Ledger orchestrates your financial journey, ensuring that every decision is made with clarity, wisdom, and empowerment.</p>      
 
         </div>
+        
+        
     </div>
     </motion.div>
   )
