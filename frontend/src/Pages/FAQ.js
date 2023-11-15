@@ -1,10 +1,7 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
-<<<<<<< HEAD
 import image from "../Pages/Customer_Care.png";
-=======
 import { motion } from 'framer-motion'
->>>>>>> 4b6fdf233b373cc68e0ed49f15817135ab2cb7ba
 
 const FAQ = () => {
   return (
@@ -33,7 +30,6 @@ const FAQ = () => {
     </div>
     <hr className="featurette-divider"></hr>
 
-<<<<<<< HEAD
 
     <div className="row featurette">
       <div className="col-md-7 order-md-2">
@@ -88,15 +84,10 @@ const FAQ = () => {
 
       
              
-    </div>
-=======
-              <li>How do I contact Cosmic Ledger customer support?</li>
-              <p>You can contact Cosmic Ledger customer support by email or live chat. Our customer support team is available Monday through Friday from 9:00 AM to 5:00 PM IST.</p>
-            </ul>
-            </div>
-            </div>
+    
+
+              
     </motion.div>
->>>>>>> 4b6fdf233b373cc68e0ed49f15817135ab2cb7ba
   )
 }
 

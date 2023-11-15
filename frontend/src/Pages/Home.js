@@ -1,12 +1,9 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
 import PopUp from '../Components/popup'
-<<<<<<< HEAD
 import image from "../Pages/logo_pic.jpg"
 
-=======
 import { motion } from 'framer-motion'
->>>>>>> 4b6fdf233b373cc68e0ed49f15817135ab2cb7ba
 console.log(PopUp)
 const Home = () => {
   return (
