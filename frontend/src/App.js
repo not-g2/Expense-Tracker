@@ -18,7 +18,8 @@ import MainHeader from './Components/MainHeader';
 
 function App() {
   return (
-    <Router>{/*
+    <Router>
+    {/*
     <div className="App">
       <Routes>
         <Route path='/login/:userAccount_no' element = {<Dashboard />}/>
@@ -28,8 +29,7 @@ function App() {
         <Route path='/pricing' element = {<Pricing/>}/>
         <Route path='/faq' element = {<FAQ/>}/> */}
         <AnimatedRoutes />
-        </Router>
-    
+      </Router>
   );
 }
 
