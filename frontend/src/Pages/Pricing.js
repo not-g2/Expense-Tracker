@@ -1,9 +1,10 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
+import { motion } from 'framer-motion'
 
 const Pricing = () => {
   return (
-    <div>
+    <motion.div animate={{width:"100%"}} initial={{width:0}} exit={{x:window.innerWidth,transition:{duration:1}}}>
       <MainHeader />
         <main>
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -116,7 +117,7 @@ const Pricing = () => {
       </table>
     </div>
   </main>
-    </div>
+    </motion.div>
   )
 }
 

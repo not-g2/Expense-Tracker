@@ -4,6 +4,9 @@ import AboutUs from './Pages/About_Us';
 import Pricing from './Pages/Pricing';
 import Dashboard from './Pages/Dashboard';
 import FAQ from './Pages/FAQ'
+import TransactionHistory from './Pages/TransactionHistory';
+import AnimatedRoutes from './Components/AnimatedRoutes';
+
 
 import {
   BrowserRouter as Router,
@@ -15,17 +18,26 @@ import MainHeader from './Components/MainHeader';
 
 function App() {
   return (
+<<<<<<< HEAD
+    
+    <div className="App" >
+        <Router>
+        {/* <Route path='/login/:loginid' element = {<Dashboard />}/>
+        <Route path='/login/:loginid/transactions' element = {<TransactionHistory />}/>
+=======
     <Router>
     <div className="App">
       <Routes>
-        <Route path='/login/:loginid' element = {<Dashboard />}/>
+        <Route path='/login/:userAccount_no' element = {<Dashboard />}/>
+        <Route path='/login/transactions/:userAccount_no' element = {<TransactionHistory />}/>
+>>>>>>> c4d33717a20778552b8a96aac8881f5babcdf15b
         <Route path='/home' element = {<Home/>}/>
         <Route path='/about' element = {<AboutUs/>}/>
         <Route path='/pricing' element = {<Pricing/>}/>
-        <Route path='/faq' element = {<FAQ/>}/>
-      </Routes>
+        <Route path='/faq' element = {<FAQ/>}/> */}
+        <AnimatedRoutes />
+        </Router>
     </div>
-    </Router>
   );
 }
 
