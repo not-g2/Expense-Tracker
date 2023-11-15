@@ -18,12 +18,8 @@ import MainHeader from './Components/MainHeader';
 
 function App() {
   return (
-<<<<<<< HEAD
     <Router>
     {/*
-=======
-    <Router>{/*
->>>>>>> 04b849f45dedc18f635636eef85f7343b5d69265
     <div className="App">
       <Routes>
         <Route path='/login/:userAccount_no' element = {<Dashboard />}/>
@@ -33,12 +29,7 @@ function App() {
         <Route path='/pricing' element = {<Pricing/>}/>
         <Route path='/faq' element = {<FAQ/>}/> */}
         <AnimatedRoutes />
-<<<<<<< HEAD
       </Router>
-=======
-        </Router>
-    
->>>>>>> 04b849f45dedc18f635636eef85f7343b5d69265
   );
 }
 
