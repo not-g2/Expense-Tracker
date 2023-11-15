@@ -1,10 +1,11 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
 import PopUp from '../Components/popup'
+import { motion } from 'framer-motion'
 console.log(PopUp)
 const Home = () => {
   return (
-    <div className='HomePage'>
+    <motion.div className='HomePage' animate={{width:"100%"}} initial={{width:0}} exit={{x:window.innerWidth,transition:{duration:1}}}>
         {/* <h2>Unleash the Power of Financial Harmony</h2>
         <h3>Cosmic Ledger: Your Personal Financial Guardian</h3>
         <p>Embark on a transformative journey towards financial well-being with Cosmic Ledger, your personal financial guardian. Inspired by the Egyptian god Thoth, the deity of knowledge, wisdom, and writing, Cosmic Ledger meticulous tracks your financial transactions, illuminating your path to financial clarity and empowerment.</p>
@@ -227,7 +228,7 @@ const Home = () => {
       <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet"></link>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </div>
-    </div>
+    </motion.div>
   )
       }
 export default Home

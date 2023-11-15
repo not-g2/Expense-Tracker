@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import { Navigate } from 'react-router-dom'
+import { motion } from "framer-motion"
 
 
 const PopUp=props=>{
@@ -27,16 +28,13 @@ const PopUp=props=>{
                 return response.json()
             }
         })
-        .then(data => {
-            console.log(data.id)
-        })
     }
     if (loggedIn) {
         return <Navigate to="/login/:loginid" />;
       }
 
     return (
-        <div className="popup">
+        <motion.div className="popup" animate={{x:100,scale:1}} initial={{scale:0}} >
             <div className="popup-inner">
                 <h2>Login</h2>
                 <form onSubmit={handleLogin}>
@@ -48,11 +46,11 @@ const PopUp=props=>{
                         Password:
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
                     </label>
-                    <button type="submit">Login</button>
+                    <button type="submit" onClick={props.name}>Login</button>
                     <button type="button" onClick={props.hclose}>Exit</button>
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default PopUp

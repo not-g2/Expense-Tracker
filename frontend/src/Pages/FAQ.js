@@ -1,9 +1,10 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
+import { motion } from 'framer-motion'
 
 const FAQ = () => {
   return (
-    <div>
+    <motion.div animate={{width:"100%"}} initial={{width:0}} exit={{x:window.innerWidth,transition:{duration:1}}}>
       <div className='Faq'>
       <MainHeader />
         <div className='Faq-text'>
@@ -22,7 +23,7 @@ const FAQ = () => {
             </ul>
             </div>
             </div>
-    </div>
+    </motion.div>
   )
 }
 

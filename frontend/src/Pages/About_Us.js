@@ -1,9 +1,10 @@
 import React from 'react'
 import MainHeader from '../Components/MainHeader'
+import { motion } from 'framer-motion'
 
 const About_Us = () => {
   return (
-    <div className='aboutUsPage'>
+    <motion.div className='aboutUsPage' animate={{width:"100%"}} initial={{width:0}} exit={{x:window.innerWidth,transition:{duration:1}}}>
       <MainHeader />
     <div container="About_Uscont" className='About_Uscont'>
        <div container="Heading_About_Us" className='Heading_About_Us'>
@@ -33,7 +34,7 @@ Introducing Cosmic Ledger: Your Personal Financial Guardian</h2>
 
         </div>
     </div>
-    </div>
+    </motion.div>
   )
 }
 
