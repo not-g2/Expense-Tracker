@@ -1,16 +1,17 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const NavBar = () => {
     const navigate=useNavigate()
+    const {userAccount_no} = useParams();
     const GoTransact=()=>{
       return (
-      navigate('/login/:loginid/transactions')
+      navigate(`/login/transactions/${userAccount_no}`)
       )
     }
     const GoDash=()=>{
       return (
-      navigate('/login/:loginid')
+      navigate(`/login/${userAccount_no}`)
       )
     }
     return (

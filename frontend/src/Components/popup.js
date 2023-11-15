@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 import React,{useState} from 'react'
 import { Navigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 
+=======
+import React,{useEffect, useState} from 'react'
+import { useNavigate } from 'react-router-dom'
+>>>>>>> c4d33717a20778552b8a96aac8881f5babcdf15b
 
 const PopUp=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loggedIn, setLoggedIn] = useState(false);
-    let userId = 0;
+    const [userAccountNo, setUserAccountNo] = useState(null);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (loggedIn && userAccountNo !== null) {
+            navigate(`/login/${userAccountNo}`);
+        }
+      }, [loggedIn, userAccountNo, navigate]);
 
     function handleLogin(e) {
         e.preventDefault()
@@ -18,20 +30,24 @@ const PopUp=props=>{
                 'Content-Type': 'application/json',
             },
         })
-        .then(response => {
+        .then(async response => {
             if (!response.ok) {
-                setUsername("")
-                setPassword("")
+                setUsername("");
+                setPassword("");
+            } else {
+                const jsonData = await response.json();
+                setUserAccountNo(jsonData.account_no);
+                setLoggedIn(true);
             }
+<<<<<<< HEAD
             else {
                 setLoggedIn(true)
                 return response.json()
             }
+=======
+>>>>>>> c4d33717a20778552b8a96aac8881f5babcdf15b
         })
     }
-    if (loggedIn) {
-        return <Navigate to="/login/:loginid" />;
-      }
 
     return (
         <motion.div className="popup" animate={{x:100,scale:1}} initial={{scale:0}} >
