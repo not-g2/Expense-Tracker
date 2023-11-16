@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-import React,{useState} from 'react'
-import { Navigate } from 'react-router-dom'
+import React,{useState,useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion } from "framer-motion"
 
-=======
-import React,{useEffect, useState} from 'react'
-import { useNavigate } from 'react-router-dom'
->>>>>>> c4d33717a20778552b8a96aac8881f5babcdf15b
 
 const PopUp=props=>{
     const [username, setUsername] = useState('')
@@ -39,13 +34,6 @@ const PopUp=props=>{
                 setUserAccountNo(jsonData.account_no);
                 setLoggedIn(true);
             }
-<<<<<<< HEAD
-            else {
-                setLoggedIn(true)
-                return response.json()
-            }
-=======
->>>>>>> c4d33717a20778552b8a96aac8881f5babcdf15b
         })
     }
 

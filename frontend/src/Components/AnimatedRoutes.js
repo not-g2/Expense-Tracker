@@ -22,7 +22,7 @@ function AnimatedRoutes() {
     <AnimatePresence>
     <Routes location={location} key={location.pathname}>
         <Route path='/login/:loginid' element = {<Dashboard />}/>
-        <Route path='/login/:loginid/transactions' element = {<TransactionHistory />}/>
+        <Route path='/login/transactions/:loginid/' element = {<TransactionHistory />}/>
         <Route path='/home' element = {<Home/>}/>
         <Route path='/about' element = {<AboutUs/>}/>
         <Route path='/pricing' element = {<Pricing/>}/>

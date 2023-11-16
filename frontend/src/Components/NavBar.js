@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const NavBar = () => {
     const navigate=useNavigate()
@@ -15,7 +16,8 @@ const NavBar = () => {
       )
     }
     return (
-    <div className='navigation-bar'>
+    <motion.div className='navigation-bar' initial={{ x: -100 }}
+    animate={{ x: 0 }}>
         <button onClick={GoDash}>
           Home
         </button>
@@ -34,7 +36,7 @@ const NavBar = () => {
         <button>
           Vault
         </button>
-    </div>
+    </motion.div>
   )
 }
 
