@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
 }
 /*Related to DashBoard*/
 
@@ -151,6 +151,15 @@ text-align: justify;
     font-size: 100px;
     font-family: 'Ubuntu', sans-serif;
     
+  }
+  .Home-subheadding{
+    background: linear-gradient(to right, #f32170, 
+              #ff6b08, #cf23cf, #eedd44); 
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; 
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Ubuntu', sans-serif;
   }
   
   .footer_container{
