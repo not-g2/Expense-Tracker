@@ -21,13 +21,13 @@ const PopUpR=props=>{
         }
     }
     if (loggedIn) {
-        return <Navigate to="/login/:loginid" />;
+        return <Navigate to="/login/:userAccount_no" />;
       }
 
     return (
         <motion.div className="popup" animate={{x:100,scale:1}} initial={{scale:0}}>
             <div className="popup-inner">
-                <h2>Login</h2>
+                <h2>Register</h2>
                 <form onSubmit={handleRegister}>
                     <label>
                         Username:
@@ -38,7 +38,7 @@ const PopUpR=props=>{
                         <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
                     </label>
                     <label>
-                        Cofnirm Password:
+                        Confirm Password:
                         <input type="password1" value={password1} onChange={e => setPassword1(e.target.value)} />
                     </label>
                     <button type="submit">Register</button>

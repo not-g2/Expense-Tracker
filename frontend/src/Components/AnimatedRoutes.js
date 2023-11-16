@@ -21,8 +21,8 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
     <Routes location={location} key={location.pathname}>
-        <Route path='/login/:loginid' element = {<Dashboard />}/>
-        <Route path='/login/:loginid/transactions' element = {<TransactionHistory />}/>
+        <Route path='/login/:userAccount_no' element = {<Dashboard />}/>
+        <Route path='/login/transactions/:userAccount_no' element = {<TransactionHistory />}/>
         <Route path='/home' element = {<Home/>}/>
         <Route path='/about' element = {<AboutUs/>}/>
         <Route path='/pricing' element = {<Pricing/>}/>
