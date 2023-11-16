@@ -28,7 +28,7 @@ function App() {
         <Route path='/pricing' element = {<Pricing/>}/>
         <Route path='/faq' element = {<FAQ/>}/> */}
         <AnimatedRoutes />
-        </Router>
+      </Router>
     </div>
   );
 }

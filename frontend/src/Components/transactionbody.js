@@ -1,8 +1,5 @@
 import { Colors } from "chart.js";
 
-
-
-
 const Transactionbody=props=>{
 return (
     <div className="transactbody">
