@@ -3,6 +3,7 @@ import Welcome from './Welcome'
 import QuickSummary from './QuickSummary'
 import Pie from './graph'
 import UserData from './Dashboardpiedata'
+import Table from './table'
 
 const DashboardHomePage = (props) => {
   const [userData, setUserData] = useState({
@@ -32,6 +33,9 @@ const DashboardHomePage = (props) => {
           <QuickSummary/>
           <div className="piechart" style={{ width: 500 }}>
         <Pie chartData={userData} />
+        </div>
+        <div className='dashtable'>
+          <Table />
         </div>
         </div>
 
