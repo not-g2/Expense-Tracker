@@ -18,22 +18,25 @@ const PopUp=props=>{
 
     function handleLogin(e) {
         e.preventDefault()
-        const apiUrl = `http://127.0.0.1:8000/login/?param1=${username}&param2=${password}`
-        fetch(apiUrl, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+        const url = 'http://127.0.0.1:8000/login/'
+
+        const userData = {
+        username: username,
+        password: password,
+        };
+
+        fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
         })
-        .then(async response => {
+        .then(response => {
             if (!response.ok) {
-                setUsername("");
-                setPassword("");
-            } else {
-                const jsonData = await response.json();
-                setUserAccountNo(jsonData.account_no);
-                setLoggedIn(true);
+            throw new Error(`HTTP error! Status: ${response.status}`);
             }
+            navigate(`/login`); //Stopped Here now add for the logout button
         })
     }
 

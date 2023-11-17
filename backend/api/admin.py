@@ -1,8 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import User, ExpenditureTransaction
+from .models import CustomUser, CategoryExpenditure
 
-
-admin.site.register(User)
-admin.site.register(ExpenditureTransaction)
+admin.site.register(CustomUser)
+admin.site.register(CategoryExpenditure)

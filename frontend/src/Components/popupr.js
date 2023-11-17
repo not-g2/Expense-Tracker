@@ -1,28 +1,59 @@
 import React,{useState} from 'react'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    
+    if (parts.length === 2) {
+        return parts.pop().split(';').shift();
+    }
+}
 
 const PopUpR=props=>{
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [password1, setPassword1] = useState('')
-    const [loggedIn, setLoggedIn] = useState(false);
+    const navigate = useNavigate();
 
     function handleRegister(e) {
         e.preventDefault()
-        if (password1===password){
-            setLoggedIn(true);
-        }
-        else{
-            setUsername("")
-            setPassword("")
-            setPassword1("")
-        }
+        const url = 'http://127.0.0.1:8000/register/'
+
+        const userData = {
+        username: username,
+        password1: password,
+        password2: password1
+        };
+        const cookie = getCookie('csrftoken');
+        console.log(cookie)
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': cookie // Include a function to get the CSRF token from cookies
+            },
+            body: JSON.stringify(userData),
+        })
+        .then(response => {
+            if (!response.ok) {
+                return response.json();
+            }
+            navigate('/login')
+        })
+        .then(data => {
+            if (data.errors) {
+                console.log('Validation errors:', data.errors);
+            } else {
+                console.log('Successful response:', data);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     }
-    if (loggedIn) {
-        return <Navigate to="/login/:userAccount_no" />;
-      }
 
     return (
         <motion.div className="popup" animate={{x:100,scale:1}} initial={{scale:0}}>
